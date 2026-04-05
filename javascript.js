@@ -12,6 +12,7 @@ function getAGrid(size) {
             const divSize = 600 / size;
             div.style.width = divSize + "px";
             div.style.height = divSize + "px";
+            let opacity = 0;
             //chage color of de box
             div.addEventListener("mouseenter", () => {
                 //random color
@@ -19,6 +20,10 @@ function getAGrid(size) {
                 const blue = Math.floor(Math.random() * 256);
                 const green = Math.floor(Math.random() * 256);
                 div.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+                //opacity
+                opacity += 0.1;
+                div.style.opacity = opacity;
+                
             });
         }
     } 
