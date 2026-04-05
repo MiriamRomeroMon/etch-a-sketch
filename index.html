@@ -4,9 +4,31 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="javascript.js" defer></script>
+        <style>
+            #container {
+                display:flex;
+                flex-wrap: wrap;
+            }
+            .divs {
+                border:1px solid black;
+                height:60px;
+                width:60px;
+            }
+            .btn {
+                background-color: gray;
+                border-radius: 8px;
+                margin-bottom: 10px;
+                height: auto;
+                width: auto;
+            }
+            input {
+                margin-bottom: 10px;
+            }
+        </style>
         <title>Etch-A-Sketch</title>
     </head>
     <body>
-
+        <button class="btn">NewBlock</button>
+        <div id="container"></div>
     </body>
 </html>
